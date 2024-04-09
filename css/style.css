@@ -507,3 +507,36 @@ h6,
     border: 1px solid  rgb(190, 190, 190);
     height: 45px;
 }
+
+
+
+
+
+.img__ehtiyyat__hisseler__general{
+padding: 20px;
+border: 1px solid rgb(190, 190, 190);
+
+}
+
+
+@media (max-width: 991px) {
+    .img__ehtiyyat__hisseler{
+              
+    }       
+    
+}
+
+
+@media (min-width: 767.98px) {
+    .footer-about {
+        margin-bottom: -75px;
+    }
+}
+
+
+.img__for__ehtiyyat{
+max-width: 250px;
+width: 100%;
+height: auto;
+}
+

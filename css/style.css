@@ -519,24 +519,44 @@ border: 1px solid rgb(190, 190, 190);
 }
 
 
-@media (max-width: 991px) {
-    .img__ehtiyyat__hisseler{
-              
-    }       
-    
+.img__for__memory{
+    width: 100%; 
+    max-width: 250px; 
+    margin: auto;
 }
-
-
-@media (min-width: 767.98px) {
-    .footer-about {
-        margin-bottom: -75px;
-    }
-}
-
 
 .img__for__ehtiyyat{
 max-width: 250px;
 width: 100%;
 height: auto;
 }
+
+
+@media (max-width: 991px) {
+    .img__for__ehtiyyat{
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+        }   
+        .img__for__memory{
+            width: 100%; 
+            max-width: 220px; 
+            margin: auto;
+        }
+}
+
+@media (max-width: 768px) {
+    .img__for__ehtiyyat{
+        max-width: 190px;
+        width: 100%;
+        height: auto;
+        }   
+        .img__for__memory{
+            width: 100%; 
+            max-width: 190px; 
+            margin: auto;
+        }
+}
+
+
 

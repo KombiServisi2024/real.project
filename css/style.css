@@ -503,9 +503,10 @@ h6,
 
 .general-for-part-button{
     border: 1px solid  rgb(190, 190, 190);
-    height: 45px;
-    max-width: 250px;
+    height: 85px;
+    max-width: 310px;
     width: 100%;
+    text-align: center;
 }
 
 .general-for-part-info{
@@ -513,6 +514,7 @@ h6,
     min-height: 65px;
     max-width: 200px;
     width: 100%;
+    text-align: center;
 }
 
 .general-for-part-head{

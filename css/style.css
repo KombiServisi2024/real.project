@@ -513,6 +513,22 @@ h6,
     background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img/fotoehtiyyat.webp) center center no-repeat;
     background-size: cover;
 }
+.bg-contact {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img/360_F_269275503_fL3Dx8hgvCDgrnuvbm8XLPHJ461QIM4o.jpg) center center no-repeat;
+    background-size: cover;
+}
+.bg-xetakodlari {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img/Ekran\ şəkli\ 2024-04-27\ 003542.png) center center no-repeat;
+    background-size: cover;
+}
+.bg-platalar {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img/kart1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.bg-kombiustasi {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img/1666610045282076356737da6e6d.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 .link-animated a {
     transition: .5s;
@@ -614,7 +630,7 @@ h6,
 
 
 
-.img__ehtiyyat__hisseler__general {
+.img__ehtiyyat__hisseler__general{
     padding: 20px;
     border: 2px solid rgb(190, 190, 190);
 

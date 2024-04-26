@@ -653,3 +653,39 @@ height: auto;
         grid-template-columns: 1fr;
     }
   }
+
+
+.img-general-logo{
+    margin-left: 12px;
+    width: 240px;
+    height: 110px;
+}
+  .img-logo{
+width: 100%;
+height: 100%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .img-general-logo{
+        margin-left: 10px;
+        width: 180px;
+    
+        height: 80px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .img-general-logo{
+        margin-left: 10px;
+        width: 200px;
+ 
+        height: 85px;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .img-general-logo{
+       margin: 3px;
+        width: 150px;
+        width: 100%;
+        height: 66px;
+    }
+  }

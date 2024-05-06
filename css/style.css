@@ -568,13 +568,16 @@ h6,
     max-width: 200px;
     width: 100%;
     text-align: center;
+
 }
 
 .general-for-part-head {
     border: 1px solid rgb(190, 190, 190);
     min-height: 65px;
     max-width: 150px;
-    width: 100%;
+    width: 100%;display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -632,8 +635,10 @@ h6,
 
 .img__ehtiyyat__hisseler__general{
     padding: 20px;
-    border: 2px solid rgb(190, 190, 190);
-
+    border: 1px solid rgb(190, 190, 190);
+    height: 310px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -649,6 +654,12 @@ h6,
     height: auto;
 }
 
+.items-logo{
+    
+    width: 135px;
+    height: 60px;
+
+}
 
 @media (max-width: 991px) {
     .img__for__ehtiyyat {

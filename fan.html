@@ -77,19 +77,21 @@
 
     <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Kombi</h1>
-            </a>
+        <nav class="navbar navbar-expand-lg navbar-dark px-2 py-3 py-lg-0">
+            <div class="img-general-logo">
+                <a href="./index.html" class="navbar-brand p-0">
+                    <img class="img-logo" src="./img/logo-img.png" alt=""></i>
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Ana Səhifə</a>
+                    <a href="index.html" class="nav-item nav-link">Ana Səhifə</a>
                     <a href="kombiustasi.html" class="nav-item nav-link">Kombi ustası</a>
                     <a href="kombiplatalari.html" class="nav-item nav-link">Kombi plataları</a>
-                    <a href="ehtiyyathisseler.html" class="nav-item nav-link">Ehtiyyat hissələrin satışı</a>
+                    <a href="ehtiyyathisseler.html" class="nav-item nav-link active">Ehtiyyat hissələrin satışı</a>
                     <a href="xetakodlari.html" class="nav-item nav-link">Kombi kodları</a>
                     <a href="contact.html" class="nav-item nav-link">Bizimlə Əlaqə</a>
                 </div>
@@ -469,6 +471,26 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+
+        const image = document.querySelector('.img-logo');
+
+        if (window.innerWidth < 992) {
+            image.setAttribute('src', './img/logo-img.png');
+        } else {
+            image.setAttribute('src', './img/whitelogo.png')
+        }
+
+        window.addEventListener("resize", function () {
+            const image = document.querySelector('.img-logo');
+
+            if (window.innerWidth < 992) {
+                image.setAttribute('src', './img/logo-img.png');
+            } else {
+                image.setAttribute('src', './img/whitelogo.png')
+            }
+        });
+    </script>
 </body>
 
 </html>

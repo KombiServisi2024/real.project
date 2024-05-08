@@ -98,10 +98,12 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
-            </a>
+        <nav class="navbar navbar-expand-lg navbar-dark px-2 py-3 py-lg-0">
+            <div class="img-general-logo">
+                <a href="./index.html" class="navbar-brand p-0">
+                    <img class="img-logo" src="./img/logo-img.png" alt=""></i>
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
@@ -161,36 +163,36 @@
             </div>
             <div class="row g-5 mb-5">
                 <div class="col-lg-4">
-                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column gap-3 wow fadeIn" data-wow-delay="0.1s">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded"
                             style="width: 60px; height: 60px;">
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
-                        <div class="ps-4">
+                        <div class="">
                             <h5 class="mb-2">Suallarınız üçün zəng edin.</h5>
                             <h4 class="text-primary mb-0"><a href="tel:+994506106313">050-610-63-13</a></h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.4s">
+                    <div class="d-flex flex-column gap-3 wow fadeIn" data-wow-delay="0.4s">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded"
                             style="width: 60px; height: 60px;">
                             <i class="fa fa-envelope-open text-white"></i>
                         </div>
-                        <div class="ps-4">
+                        <div class="">
                             <h5 class="mb-2">Gmail vasitəsilə əlaqə üçün</h5>
                             <h4 class="text-primary mb-0 fs-5">alovservis@gmail.com</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="d-flex align-items-center wow fadeIn" data-wow-delay="0.8s">
+                    <div class="d-flex flex-column gap-3 wow fadeIn" data-wow-delay="0.8s">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded"
                             style="width: 60px; height: 60px;">
                             <i class="fa fa-map-marker-alt text-white"></i>
                         </div>
-                        <div class="ps-4">
+                        <div class="">
                             <h5 class="mb-2">Servisimizin məkan ünvanı</h5>
                             <h4 class="text-primary mb-0">Bakı,Xırdalan</h4>
                         </div>
@@ -347,6 +349,26 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+
+        const image = document.querySelector('.img-logo');
+
+        if (window.innerWidth < 992) {
+            image.setAttribute('src', './img/logo-img.png');
+        } else {
+            image.setAttribute('src', './img/whitelogo.png')
+        }
+
+        window.addEventListener("resize", function () {
+            const image = document.querySelector('.img-logo');
+
+            if (window.innerWidth < 992) {
+                image.setAttribute('src', './img/logo-img.png');
+            } else {
+                image.setAttribute('src', './img/whitelogo.png')
+            }
+        });
+    </script>
 
 
     

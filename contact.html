@@ -224,29 +224,37 @@
             </div>
           <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
+                    <form id="contact-form">
+                        <!-- To simplify the tutorial, the value is static. -->
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Adınız"
-                                    style="height: 55px;">
+                                <label>Firstname</label>
+                                <input type="text" name="user_firstname" class="form-control border-0 bg-light px-4"
+                                    id="user-firstname" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Email hesabınız"
-                                    style="height: 55px;">
+                                <label>Lastname</label>
+                                <input type="text" name="user_lastname" class="form-control border-0 bg-light px-4"
+                                    id="user-lastname" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Phone Number</label>
+                                <input type="phone" name="user_phone_number" class="form-control border-0 bg-light px-4"
+                                    id="user-phone-number" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                <input type="text" name="user_email" class="form-control border-0 bg-light px-4"
+                                    id="user-email" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Başlıq"
-                                    style="height: 55px;">
+                                <label>Message</label>
+                                <textarea name="message" class="form-control border-0 bg-light px-4 py-3" rows="4"
+                                    id="user-message" required></textarea>
                             </div>
-                            <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4"
-                                    placeholder="Mesaj"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Mesaj Gondər</button>
-                            </div>
+                            <input type="submit" value="Send" class="btn btn-primary w-100 py-3">
                         </div>
-                    </form>
+                    </form> 
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
@@ -380,6 +388,56 @@
             }
         });
     </script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "btT7uQq4jU--taa-E",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_c0arhve', 'template_d22oe6q', this)
+                    .then(() => {
+                        const inp1 = document.getElementById('user-firstname');
+                        inp1.value = ''
+
+                        const inp2 = document.getElementById('user-lastname');
+                        inp2.value = ''
+
+                        const inp3 = document.getElementById('user-email');
+                        inp3.value = ''
+
+                        const inp4 = document.getElementById('user-phone-number');
+                        inp4.value = ''
+
+                        const inp5 = document.getElementById('user-message');
+                        inp5.value = ''
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: "Mesajınız uğurla göndərildi!",
+                            showConfirmButton: false,
+                            timer: 1000
+                        });
+                    }, (error) => {
+                        Swal.fire({
+                            position: "center",
+                            icon: "error",
+                            title: "Mesaj göndərilmədi!",
+                            showConfirmButton: false,
+                            timer: 1000
+                        });
+                    });
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 
     

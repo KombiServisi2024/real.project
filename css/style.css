@@ -510,23 +510,23 @@ h6,
 }
 
 .bg-ehtiyyat {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img/fotoehtiyyat.webp) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url('https://alovservisimages.netlify.app/img/fotoehtiyyat.webp') center center no-repeat;
     background-size: cover;
 }
 .bg-contact {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img//header_contact.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url('https://alovservisimages.netlify.app/img/header_contact.jpg') center center no-repeat;
     background-size: cover;
 }
 .bg-xetakodlari {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img/Ekran\ şəkli\ 2024-04-27\ 003542.png) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url('https://alovservisimages.netlify.app/img/Ekran şəkli 2024-04-27 003542.png') center center no-repeat;
     background-size: cover;
 }
 .bg-platalar {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img/kart1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url('https://alovservisimages.netlify.app/img/kart1.jpg') center center no-repeat;
     background-size: cover;
 }
 .bg-kombiustasi {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(/img/1666610045282076356737da6e6d.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url('https://alovservisimages.netlify.app/img/1666610045282076356737da6e6d.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -550,7 +550,7 @@ h6,
     gap: 20px;
     border: 1px solid rgb(190, 190, 190);
     padding-left: 20px;
-    align-items: center;
+    align-items: center; 
     padding-right: 20px;
 }
 
@@ -567,7 +567,9 @@ h6,
     min-height: 65px;
     max-width: 200px;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
